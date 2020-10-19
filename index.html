@@ -1,20 +1,78 @@
 <!DOCTYPE html>
 
-<head></head>
+<head>
+    <title>Basic HTML Forms | Oyonika's GitHub</title>
+</head>
 
 <body>
     <form>
-        <p>Select your gender</p>
+        <p>Select your gender:</p>
         <input checked type="radio" checked name="gender" value="female">Female<br/>
-        <input type="radio" checked name="gender" value="male">Male<br/>
-        <input type="radio" checked name="gender" value="other">Others<br/>
+        <input type="radio" name="gender" value="male">Male<br/>
+        <input type="radio" name="gender" value="other">Others<br/>
 
-        <p>Select the courses chosen</p>
-        <input type="checkbox" checked name="course" value="cpp">C++<br/>
-        <input type="checkbox" checked name="course" value="java">Java<br/>
-        <input type="checkbox" checked name="course" value="javascript">Javascript<br/>
-        <input type="checkbox" checked name="course" value="python">Python<br/>
-        <input type="checkbox" checked name="course" value="php">PHP<br/>
-        <input type="checkbox" checked name="course" value="mysql">MySQL<br/>
+        <br/>
+
+        <p>Select the courses chosen:</p>
+        <input type="checkbox" name="course" value="cpp">C++<br/>
+        <input type="checkbox" name="course" value="java">Java<br/>
+        <input type="checkbox" name="course" value="javascript">Javascript<br/>
+        <input type="checkbox" name="course" value="python">Python<br/>
+        <input type="checkbox" name="course" value="php">PHP<br/>
+        <input type="checkbox" name="course" value="mysql">MySQL<br/>
+
+        <br />
+
+        <p>Select the starting month:</p>
+        <select name="month">
+            <option>January</option>
+            <option>February</option>
+            <option>March</option>
+            <option selected>April</option>
+            <option>May</option>
+            <option>June</option>
+            <option>July</option>
+            <option>August</option>
+            <option>September</option>
+            <option>October</option>
+            <option>November</option>
+            <option>December</option>
+        </select>
+
+        <br/><br/>
+
+        <p>Select the ending months:</p>
+        <select name="month" multiple>
+            <option>January</option>
+            <option>February</option>
+            <option>March</option>
+            <option>April</option>
+            <option>May</option>
+            <option selected>June</option>
+            <option>July</option>
+            <option>August</option>
+            <option selected>September</option>
+            <option>October</option>
+            <option>November</option>
+            <option>December</option>
+        </select>
+
+        <br /><br />
+
+        <p>Tell us a little about you:</p>
+        <textarea name="description" rows="5" cols="30"></textarea>
+
+        <br /><br />
+
+        <button type="submit">Submit</button>
+
+        <br /><br />
+
+        <button type="reset">Reset</button>
+
+        <br /><br />
+
+        <button type="button">Generic Button</button>
+
     </form>
 </body>
